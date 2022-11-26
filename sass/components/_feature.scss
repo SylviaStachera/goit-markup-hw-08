@@ -1,0 +1,27 @@
+.feature {
+	margin-right: 30px;
+
+	&__icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 30px;
+		height: 120px;
+		width: 270px;
+		background-color: var(--darker-white);
+	}
+	&__header {
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 1.1428;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+	}
+
+	&__paragraph {
+		font-size: 14px;
+		line-height: 1.7143;
+		letter-spacing: 0.03em;
+		color: rgba(117, 117, 117, 1);
+	}
+}

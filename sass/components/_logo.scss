@@ -1,0 +1,34 @@
+.logo {
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	font-size: 26px;
+	height: 31px;
+	width: 145px;
+	font-weight: bold;
+	letter-spacing: 0.03em;
+	color: var(--active-color);
+
+	&--margin {
+		margin: 24px 93px 25px 0;
+	}
+
+	&--upper {
+		color: rgba(0, 0, 0, 1);
+	}
+
+	&--down {
+		font-size: 26px;
+		font-family: 'Raleway', sans-serif;
+		color: var(--main-white);
+		height: 31px;
+		width: 145px;
+		font-weight: bold;
+		letter-spacing: 0.03em;
+	}
+
+	&--block {
+		display: block;
+		margin-top: 60px;
+		margin-bottom: 20px;
+	}
+}

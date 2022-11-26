@@ -1,0 +1,17 @@
+.label {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	background: rgba(47, 48, 58, 0.8);
+
+	&__paragraph {
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 1.1721;
+		color: var(--main-white);
+		text-transform: uppercase;
+		text-align: center;
+		margin-top: 27px;
+	}
+}

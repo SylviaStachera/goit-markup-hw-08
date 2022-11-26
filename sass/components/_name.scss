@@ -1,0 +1,14 @@
+.name {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+
+	&__legend {
+		margin-top: 10px;
+		margin-bottom: 4px;
+		font-size: 12px;
+		line-height: 1.1667;
+		letter-spacing: 0.01em;
+		color: var(--main-grey);
+	}
+}

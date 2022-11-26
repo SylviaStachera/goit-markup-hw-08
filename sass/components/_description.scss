@@ -1,0 +1,21 @@
+.description {
+	&__name {
+		margin-top: 20px;
+		margin-bottom: 4px;
+		padding-left: 24px;
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 18px;
+		line-height: 2;
+		letter-spacing: 0.06em;
+	}
+
+	&__type {
+		padding-bottom: 20px;
+		padding-left: 24px;
+		line-height: 16px;
+		line-height: 1.875;
+		letter-spacing: 0.03em;
+		color: var(--main-grey);
+	}
+}

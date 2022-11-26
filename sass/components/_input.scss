@@ -1,0 +1,36 @@
+.input {
+	margin-inline: 0;
+	padding: 0;
+	height: 40px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:focus-within {
+		border-color: var(--active-color);
+	}
+
+	&:focus-within .input__icon {
+		fill: var(--active-color);
+	}
+
+	&__icon {
+		position: absolute;
+		bottom: 11px;
+		left: 12px;
+		transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+}
+
+.input__box {
+	margin-top: 11px;
+	margin-left: 42px;
+	padding: 0;
+	width: 406px;
+	height: 16px;
+	border: 0;
+
+	&:focus {
+		outline: 0;
+	}
+}

@@ -1,0 +1,13 @@
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+
+	&--space {
+		padding-bottom: 0;
+		margin-right: 0;
+	}
+
+	&--dark {
+		background-color: var(--darker-white);
+	}
+}
