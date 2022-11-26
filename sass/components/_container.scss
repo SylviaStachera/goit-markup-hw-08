@@ -1,21 +1,6 @@
 .container {
 	margin: 0 auto;
+	max-width: 1200px;
 	width: 100%;
 	padding: 0 15px;
-}
-
-@media screen and (min-width: var(--mobile)) {
-	.container {
-		max-width: var(--mobile);
-	}
-}
-@media screen and (min-width: var(--tablet)) {
-	.container {
-		max-width: var(--tablet);
-	}
-}
-@media screen and (min-width: var(--desktop)) {
-	.container {
-		max-width: var(--desktop);
-	}
 }
