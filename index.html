@@ -22,6 +22,11 @@
                     <a class="logo logo--margin" href="./index.html">
                         Web<span class="logo--upper">Studio</span>
                     </a>
+                    <div>
+                        <svg class="burger" width="40" height="40">
+                            <use href="./images/icons.svg#icon-burger_menu"></use>
+                        </svg>
+                    </div>
                     <ul class="menu">
                         <li>
                             <a class="menu__link menu__link--margin menu__link--transition menu__link--relative"
@@ -54,19 +59,38 @@
                             111</a>
                     </li>
                 </ul>
+
             </div>
         </div>
 
-        <div class="title">
+        <!-- <div class="title">
             <h1 class="title__description">efektywne rozwiązania
                 <span>dla waszego biznesu</span>
             </h1>
             <div class="flex" data-modal-open>
                 <button class="title__btn" type="button">Zamów usługę</button>
             </div>
+        </div> -->
+
+        <!-- mobile menu -->
+        <div class="mobile">
+            <button class="toggle-menu">X</button>
+            <ul class="mobile__menu">
+                <li class="mobile__space">
+                    <a class="mobile__link" href="./index.html">Agencja</a>
+                </li>
+                <li class="mobile__space">
+                    <a class="mobile__link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a class="mobile__link" href="#">Kontakt</a>
+                </li>
+            </ul>
+
         </div>
+        <!-- mobile menu ends -->
     </header>
-    <main class="main">
+    <!-- <main class="main">
         <section class="section section--space">
             <ul class="assets container">
                 <li class="feature">
@@ -332,9 +356,9 @@
                 </ul>
             </div>
         </section>
-    </main>
+    </main> -->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container wrap">
             <div>
                 <a class="logo logo--block" href="./index.html">
@@ -393,9 +417,9 @@
                 </div>
             </form>
         </div>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal__btn" type="button" data-modal-close></button>
             <form autocomplete="on" novalidate>
@@ -446,7 +470,9 @@
                 </fieldset>
             </form>
         </div>
-    </div>
+    </div> -->
+
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 

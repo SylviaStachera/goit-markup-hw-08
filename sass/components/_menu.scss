@@ -1,68 +1,71 @@
 .menu {
-	display: flex;
-	list-style: none;
-	align-items: center;
+	display: none;
 }
+// .menu {
+// 	display: flex;
+// 	list-style: none;
+// 	align-items: center;
+// }
 
-.menu__link {
-	color: var(--main-black);
-	text-decoration: none;
+// .menu__link {
+// 	color: var(--main-black);
+// 	text-decoration: none;
 
-	&--margin {
-		margin-right: 46px;
-	}
-}
+// 	&--margin {
+// 		margin-right: 46px;
+// 	}
+// }
 
-.menu__link--relative {
-	position: relative;
+// .menu__link--relative {
+// 	position: relative;
 
-	&::after {
-		content: '';
-		position: absolute;
-		bottom: -32px;
-		left: -5%;
-		background-color: var(--active-color);
-		height: 4px;
-		width: 110%;
-		border-radius: 2px;
-	}
-}
+// 	&::after {
+// 		content: '';
+// 		position: absolute;
+// 		bottom: -32px;
+// 		left: -5%;
+// 		background-color: var(--active-color);
+// 		height: 4px;
+// 		width: 110%;
+// 		border-radius: 2px;
+// 	}
+// }
 
-.menu__link--transition {
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// .menu__link--transition {
+// 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-	&:active,
-	&:hover,
-	&:hover {
-		color: var(--active-color);
-		cursor: pointer;
-	}
-}
+// 	&:active,
+// 	&:hover,
+// 	&:hover {
+// 		color: var(--active-color);
+// 		cursor: pointer;
+// 	}
+// }
 
-.menu__item {
-	display: flex;
-	align-items: center;
-	fill: #afb1b8;
-	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// .menu__item {
+// 	display: flex;
+// 	align-items: center;
+// 	fill: #afb1b8;
+// 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-	&:hover {
-		fill: var(--active-color);
-		cursor: pointer;
-	}
-	&:hover .menu__link--transition {
-		color: var(--active-color);
-		cursor: pointer;
-	}
-}
+// 	&:hover {
+// 		fill: var(--active-color);
+// 		cursor: pointer;
+// 	}
+// 	&:hover .menu__link--transition {
+// 		color: var(--active-color);
+// 		cursor: pointer;
+// 	}
+// }
 
-.menu__link--contact {
-	margin-left: 10px;
-	color: var(--main-grey);
-	font-size: 14px;
-	line-height: 1.7143;
-	letter-spacing: 0.03em;
-}
+// .menu__link--contact {
+// 	margin-left: 10px;
+// 	color: var(--main-grey);
+// 	font-size: 14px;
+// 	line-height: 1.7143;
+// 	letter-spacing: 0.03em;
+// }
 
-.menu__link--space {
-	margin-right: 50px;
-}
+// .menu__link--space {
+// 	margin-right: 50px;
+// }
