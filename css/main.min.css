@@ -242,7 +242,7 @@ summary {
 
 :root {
   --main-black: rgba(33, 33, 33, 1);
-  --active-color: rgba(33, 150, 243, 1);
+  --active-color: rgb(32, 148, 243);
   --main-white: rgba(255, 255, 255, 1);
   --main-grey: rgba(117, 117, 117, 1);
   --darker-white: rgba(245, 244, 250, 1);
@@ -312,6 +312,11 @@ body {
   position: absolute;
   top: 10px;
   right: 15px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.burger:hover {
+  cursor: pointer;
+  fill: var(--active-color);
 }
 
 .logo {
@@ -338,8 +343,11 @@ body {
 
 .mobile {
   position: fixed;
-  width: 100vh;
-  height: 100vh;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  max-width: var(--mobile);
+  background-color: #ffffff;
 }
 .mobile__menu {
   display: flex;
@@ -352,13 +360,34 @@ body {
   line-height: 1.175;
   letter-spacing: 0.02em;
 }
+
 .mobile__link {
   color: var(--main-black);
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile__link:hover {
+  color: var(--active-color);
 }
 
 .mobile__space {
   margin-bottom: 36px;
+}
+
+.mobile__btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  background-repeat: no-repeat;
+  background-size: 18px, 18px;
+  background-position: center;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile__btn:hover {
+  cursor: pointer;
+  fill: var(--active-color);
 }
 
 .d-none {
