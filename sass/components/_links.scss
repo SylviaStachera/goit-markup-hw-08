@@ -1,0 +1,25 @@
+.links {
+	position: absolute;
+	bottom: 48px;
+	left: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	list-style: none;
+	font-weight: 500;
+	font-size: 18px;
+	letter-spacing: 0.02em;
+
+	&__social {
+		display: flex;
+		height: 22px;
+		border-left: 1px solid rgba(33, 33, 33, 0.2);
+		color: var(--active-color);
+		text-decoration: none;
+		padding-inline: 10px;
+	}
+}
+
+.links__social--none {
+	border-left: none;
+}

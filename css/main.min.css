@@ -390,6 +390,57 @@ body {
   fill: var(--active-color);
 }
 
+.contacts {
+  position: absolute;
+  bottom: 134px;
+  left: 40px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  list-style: none;
+}
+.contacts__tel {
+  line-height: 1.1765;
+  font-size: 34px;
+  text-decoration: none;
+  color: var(--active-color);
+}
+.contacts__mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1667;
+  text-decoration: none;
+  color: var(--main-grey);
+}
+
+.contacts__margin {
+  margin-bottom: 32px;
+}
+
+.links {
+  position: absolute;
+  bottom: 48px;
+  left: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  list-style: none;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+}
+.links__social {
+  display: flex;
+  height: 22px;
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+  color: var(--active-color);
+  text-decoration: none;
+  padding-inline: 10px;
+}
+
+.links__social--none {
+  border-left: none;
+}
+
 .d-none {
   display: none;
 }
