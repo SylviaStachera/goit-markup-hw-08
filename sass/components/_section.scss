@@ -1,6 +1,6 @@
 .section {
-	padding-top: 94px;
-	padding-bottom: 94px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 
 	&--space {
 		padding-bottom: 0;
@@ -11,3 +11,16 @@
 		background-color: var(--darker-white);
 	}
 }
+// .section {
+// 	padding-top: 94px;
+// 	padding-bottom: 94px;
+
+// 	&--space {
+// 		padding-bottom: 0;
+// 		margin-right: 0;
+// 	}
+
+// 	&--dark {
+// 		background-color: var(--darker-white);
+// 	}
+// }

@@ -448,7 +448,6 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  max-width: var(--mobile);
   background-color: #ffffff;
 }
 .mobile__menu {
@@ -557,19 +556,57 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 600px;
-  background-image: url(../images/bg-title_v1.jpg);
-  background-size: 1600px 600px;
+  height: 400px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header_m_1x.jpg);
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .title {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header_m_2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header_tablet_1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .title {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header_tablet_2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    height: 600px;
+    background-size: 1600px 600px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header_desktop_1x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .title {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header_desktop_2x.jpg);
+  }
 }
 .title__description {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-size: 44px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.6154;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-white);
+}
+@media screen and (min-width: 1200px) {
+  .title__description {
+    font-size: 44px;
+    line-height: 1.3636;
+  }
 }
 
 .title__btn {
@@ -601,8 +638,8 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .section--space {
   padding-bottom: 0;
@@ -614,23 +651,23 @@ body {
 
 .assets {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   list-style: none;
 }
 
-.feature {
-  margin-right: 30px;
-}
 .feature__icon {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
   height: 120px;
-  width: 270px;
+  width: 100%;
   background-color: var(--darker-white);
 }
 .feature__header {
+  display: flex;
+  justify-content: center;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.1428;
@@ -638,6 +675,8 @@ body {
   text-transform: uppercase;
 }
 .feature__paragraph {
+  display: flex;
+  justify-content: center;
   font-size: 14px;
   line-height: 1.7143;
   letter-spacing: 0.03em;
