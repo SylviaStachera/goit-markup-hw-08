@@ -4,6 +4,18 @@
 	justify-content: space-between;
 	list-style: none;
 }
+
+@media screen and (min-width: 768px) {
+	.assets {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.assets {
+		flex-wrap: nowrap;
+	}
+}
 // .assets {
 // 	display: flex;
 // 	justify-content: space-between;

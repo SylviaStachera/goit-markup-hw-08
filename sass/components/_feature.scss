@@ -13,6 +13,7 @@
 	&__header {
 		display: flex;
 		justify-content: center;
+		margin-bottom: 10px;
 		font-weight: bold;
 		font-size: 14px;
 		line-height: 1.1428;
@@ -23,12 +24,35 @@
 	&__paragraph {
 		display: flex;
 		justify-content: center;
+		margin-bottom: 30px;
 		font-size: 14px;
 		line-height: 1.7143;
 		letter-spacing: 0.03em;
 		color: rgba(117, 117, 117, 1);
 	}
 }
+
+@media screen and (min-width: 768px) {
+	.feature {
+		&__icon {
+			max-width: 354px;
+		}
+		&__header {
+			max-width: 354px;
+		}
+
+		&__paragraph {
+			max-width: 354px;
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.feature {
+		margin-right: 30px;
+	}
+}
+
 // .feature {
 // 	margin-right: 30px;
 
