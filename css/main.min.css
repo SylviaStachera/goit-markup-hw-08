@@ -636,6 +636,11 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+@media screen and (min-width: 768px) {
+  .big-header {
+    display: none;
+  }
+}
 
 .section {
   padding-top: 60px;
@@ -716,6 +721,11 @@ body {
   display: flex;
   justify-content: space-between;
   list-style: none;
+}
+@media screen and (min-width: 768px) {
+  .work {
+    display: none;
+  }
 }
 
 .box {

@@ -2,4 +2,8 @@
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
+
+		@media screen and (min-width: 768px) {
+		display: none;
+	}
 }
