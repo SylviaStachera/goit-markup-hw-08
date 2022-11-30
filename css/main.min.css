@@ -636,7 +636,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .big-header, .big-header--display {
     display: none;
   }
@@ -853,8 +853,15 @@ body {
 
 .clients {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   justify-content: space-between;
   list-style: none;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    flex-wrap: nowrap;
+  }
 }
 
 .clients__icons {
@@ -867,6 +874,16 @@ body {
   border: 1px solid var(--active-color);
   fill: var(--active-color);
   cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .clients__icons {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__icons {
+    width: 170px;
+  }
 }
 
 .footer {

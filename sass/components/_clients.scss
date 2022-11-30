@@ -1,7 +1,13 @@
 .clients {
 	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
 	justify-content: space-between;
 	list-style: none;
+
+	@media screen and (min-width: 1200px) {
+		flex-wrap: nowrap;
+	}
 }
 .clients__icons {
 	border: 1px solid #afb1b8;
@@ -14,4 +20,28 @@
 		fill: var(--active-color);
 		cursor: pointer;
 	}
+
+	@media screen and (min-width: 768px) {
+		width: 226px;
+	}
+	@media screen and (min-width: 1200px) {
+		width: 170px;
+	}
 }
+// .clients {
+// 	display: flex;
+// 	justify-content: space-between;
+// 	list-style: none;
+// }
+// .clients__icons {
+// 	border: 1px solid #afb1b8;
+// 	border-radius: 4px;
+// 	fill: #afb1b8;
+// 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+// 	&:hover {
+// 		border: 1px solid var(--active-color);
+// 		fill: var(--active-color);
+// 		cursor: pointer;
+// 	}
+// }
