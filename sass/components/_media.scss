@@ -1,6 +1,7 @@
 .media {
 	display: flex;
 	list-style: none;
+	margin-bottom: 60px;
 }
 
 .media__ellipse {
@@ -24,3 +25,29 @@
 		margin: 12px;
 	}
 }
+// .media {
+// 	display: flex;
+// 	list-style: none;
+// }
+
+// .media__ellipse {
+// 	width: 44px;
+// 	height: 44px;
+// 	border-radius: 50%;
+// 	background-color: rgba(255, 255, 255, 0.1);
+// 	fill: var(--main-white);
+// 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+// 	&:hover {
+// 		background-color: var(--active-color);
+// 		cursor: pointer;
+// 	}
+
+// 	&--space {
+// 		margin-right: 10px;
+// 	}
+
+// 	&__position {
+// 		margin: 12px;
+// 	}
+// }

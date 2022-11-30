@@ -1,9 +1,21 @@
 .media-header {
+	display: flex;
+	justify-content: center;
 	color: var(--main-white);
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 0.6875;
 	letter-spacing: 0.03em;
+	margin-inline: auto;
 	margin-bottom: 20px;
 }
+// .media-header {
+// 	color: var(--main-white);
+// 	text-transform: uppercase;
+// 	font-weight: bold;
+// 	font-size: 14px;
+// 	line-height: 0.6875;
+// 	letter-spacing: 0.03em;
+// 	margin-bottom: 20px;
+// }

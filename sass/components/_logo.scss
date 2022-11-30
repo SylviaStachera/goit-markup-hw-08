@@ -16,6 +16,23 @@
 	&--upper {
 		color: rgba(0, 0, 0, 1);
 	}
+
+	&--down {
+		font-size: 26px;
+		font-family: 'Raleway', sans-serif;
+		color: var(--main-white);
+		height: 31px;
+		width: 145px;
+		font-weight: bold;
+		letter-spacing: 0.03em;
+	}
+
+	&--block {
+		display: block;
+		margin-top: 60px;
+		margin-bottom: 20px;
+		margin-inline: auto;
+	}
 }
 
 @media screen and (min-width: 768px) {
