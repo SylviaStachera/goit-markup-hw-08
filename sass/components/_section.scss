@@ -11,6 +11,12 @@
 		background-color: var(--darker-white);
 	}
 }
+
+.section--display {
+	@media screen and (max-width: 1200px) {
+		display: none;
+	}
+}
 // .section {
 // 	padding-top: 94px;
 // 	padding-bottom: 94px;

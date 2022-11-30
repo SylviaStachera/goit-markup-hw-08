@@ -1,7 +1,18 @@
 .social {
 	display: flex;
 	justify-content: space-between;
-	margin: 0 32px;
+	margin: 0 auto;
 	padding-bottom: 30px;
 	list-style: none;
+	max-width: 206px;
+
+	@media screen and (min-width: 1200px) {
+		margin: 0 32px;
+	}
 }
+// .social {
+// 	display: flex;
+// 	justify-content: space-between;
+// 	margin: 0 32px;
+// 	list-style: none;
+// }

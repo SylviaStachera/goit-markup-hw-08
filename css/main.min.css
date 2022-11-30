@@ -628,7 +628,7 @@ body {
   cursor: pointer;
 }
 
-.big-header {
+.big-header, .big-header--display {
   margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
@@ -636,8 +636,14 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
-@media screen and (min-width: 768px) {
-  .big-header {
+@media screen and (max-width: 768px) {
+  .big-header, .big-header--display {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .big-header--display {
     display: none;
   }
 }
@@ -652,6 +658,12 @@ body {
 }
 .section--dark {
   background-color: var(--darker-white);
+}
+
+@media screen and (max-width: 1200px) {
+  .section--display {
+    display: none;
+  }
 }
 
 .assets {
@@ -722,7 +734,7 @@ body {
   justify-content: space-between;
   list-style: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1200px) {
   .work {
     display: none;
   }
@@ -752,11 +764,27 @@ body {
 
 .team {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   list-style: none;
 }
 
+@media screen and (min-width: 768px) {
+  .team {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    flex-wrap: nowrap;
+  }
+  .card__width {
+    max-width: 270px;
+  }
+}
 .card {
+  margin-bottom: 30px;
   background-color: var(--main-white);
   border: 1px solid #eeeeee;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -778,13 +806,32 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-grey);
 }
+.card:last-child {
+  margin-bottom: 0;
+}
 
+@media screen and (min-width: 768px) {
+  .card:nth-of-type(3n) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card {
+    margin-bottom: 0;
+  }
+}
 .social {
   display: flex;
   justify-content: space-between;
-  margin: 0 32px;
+  margin: 0 auto;
   padding-bottom: 30px;
   list-style: none;
+  max-width: 206px;
+}
+@media screen and (min-width: 1200px) {
+  .social {
+    margin: 0 32px;
+  }
 }
 
 .ellipse {

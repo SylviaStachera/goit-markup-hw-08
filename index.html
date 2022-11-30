@@ -176,9 +176,9 @@
                 </li>
             </ul>
         </section>
-        <section class="section">
+        <section class="section section--display">
             <div class="container">
-                <h2 class="big-header">Czym się zajmujemy</h2>
+                <h2 class="big-header big-header--display ">Czym się zajmujemy</h2>
                 <ul class="work">
                     <li>
                         <div class="box">
@@ -213,14 +213,27 @@
                 </ul>
             </div>
         </section>
-        <!-- <section class=" section section--dark">
+        <section class=" section section--dark">
             <div class="container">
                 <h2 class="big-header">Nasz zespół</h2>
                 <ul class="team">
                     <li class="card">
                         <figure>
-                            <img src="./images/person1_v1.jpg" alt="Uśmiechnięty brunet w okularach i brązowej koszuli"
-                                width="270" height="260">
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                                    srcset="./images/person1_v1.jpg 1x, ./images/person1_2x_.jpg 2x" type="image/jpg"
+                                    sizes="270px" />
+
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/person1_t_.jpg 1x, ./images/person1_m_2x.jpg 2x"
+                                    type="image/jpg" />
+
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/person1_m_.jpg 1x, ./images/person1_m_2x.jpg 2x"
+                                    type="image/jpg" />
+                                <img class="card__width" src="./images/person1_m_.jpg"
+                                    alt="Uśmiechnięty brunet w okularach i brązowej koszuli">
+                            </picture>
                             <figcaption>
                                 <p class="card__name">John Doe</p>
                                 <p class="card__job">Product Designer</p>
@@ -251,8 +264,21 @@
                     </li>
                     <li class="card">
                         <figure>
-                            <img src="./images/person2_v1.jpg"
-                                alt="Uśmiechnięta blondynka w okularach w czarnej marynarce" width="270" height="260">
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                                    srcset="./images/person2_v1.jpg 1x, ./images/person2_2x_.jpg 2x" type="image/jpg" />
+
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/person2_t_.jpg 1x, ./images/person2_m_2x.jpg 2x"
+                                    type="image/jpg" />
+
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/person2_m_.jpg 1x, ./images/person2_m_2x.jpg 2x"
+                                    type="image/jpg" />
+
+                                <img class="card__width" src="./images/person2_m_.jpg"
+                                    alt="Uśmiechnięta blondynka w okularach w czarnej marynarce">
+                            </picture>
                             <figcaption>
                                 <p class="card__name">John Doe</p>
                                 <p class="card__job">Frontend Developer</p>
@@ -283,8 +309,21 @@
                     </li>
                     <li class="card">
                         <figure>
-                            <img src="./images/person3_v1.jpg" alt="Uśmiehnięty brunet patrzyący w prawą stronę"
-                                width="270" height="260">
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                                    srcset="./images/person3_v1.jpg 1x, ./images/person3_2x_.jpg 2x" type="image/jpg" />
+
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/person3_t_.jpg 1x, ./images/person3_m_2x.jpg 2x"
+                                    type="image/jpg" />
+
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/person3_m_.jpg 1x, ./images/person3_m_2x.jpg 2x"
+                                    type="image/jpg" />
+
+                                <img class="card__width" src="./images/person3_m_.jpg"
+                                    alt="Uśmiehnięty brunet patrzyący w prawą stronę">
+                            </picture>
                             <figcaption>
                                 <p class="card__name">John Doe</p>
                                 <p class="card__job">Marketing</p>
@@ -315,8 +354,21 @@
                     </li>
                     <li class="card">
                         <figure>
-                            <img src="./images/person4_v1.jpg" alt="Brunet w okluarach w czarnej koszulce" width="270"
-                                height="260">
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                                    srcset="./images/person4_v1.jpg 1x, ./images/person4_2x_.jpg 2x" type="image/jpg" />
+
+                                <source media="(min-width: 768px)"
+                                    srcset="./images/person4_t_.jpg 1x, ./images/person4_m_2x.jpg 2x"
+                                    type="image/jpg" />
+
+                                <source media="(max-width: 767px)"
+                                    srcset="./images/person4_m_.jpg 1x, ./images/person4_m_2x.jpg 2x"
+                                    type="image/jpg" />
+
+                                <img class="card__width" src="./images/person4_m_.jpg"
+                                    alt="Brunet w okluarach w czarnej koszulce">
+                            </picture>
                             <figcaption>
                                 <p class="card__name">John Doe</p>
                                 <p class="card__job">UI Designer</p>
@@ -347,7 +399,7 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!-- <section class="section">
             <div class="container">
                 <h2 class="big-header">Nasi klienci</h2>
