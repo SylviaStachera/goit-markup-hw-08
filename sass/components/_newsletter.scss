@@ -50,6 +50,7 @@
 	margin: 0;
 	text-align: left;
 	padding-left: 42px;
+	margin-bottom: 60px;
 	fill: var(--main-white);
 	// margin-left: 24px;
 	font-family: 'Roboto', sans-serif;
@@ -71,6 +72,7 @@
 
 	@media screen and (min-width: 1200px) {
 		margin-left: 24px;
+		margin-bottom: 0;
 	}
 }
 

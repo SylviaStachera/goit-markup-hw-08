@@ -14,20 +14,24 @@
 
 <body>
     <header>
-
         <div class="header">
             <div class="nav container">
                 <nav class="navigation">
                     <a class="logo logo--margin" href="./index.html">
                         Web<span class="logo--upper">Studio</span>
                     </a>
+                    <div>
+                        <svg class="burger" width="40" height="40">
+                            <use href="./images/icons.svg#icon-burger_menu"></use>
+                        </svg>
+                    </div>
                     <ul class="menu">
                         <li>
-                            <a class="menu__link menu__link--margin menu__link--transition"
+                            <a class="menu__link menu__link--margin menu__link--transition menu__link--relative"
                                 href="./index.html">Agencja</a>
                         </li>
                         <li>
-                            <a class="menu__link menu__link--margin menu__link--transition menu__link--relative"
+                            <a class="menu__link menu__link--margin menu__link--transition"
                                 href="./portfolio.html">Portfolio</a>
                         </li>
                         <li>
@@ -36,7 +40,7 @@
                     </ul>
                 </nav>
 
-                <ul class="menu">
+                <ul class="menu menu--flex">
                     <li class="menu__item">
                         <svg width="16" height="12">
                             <use href="./images/icons.svg#icon-envelope"></use>
@@ -48,21 +52,69 @@
                         <svg width="10" height="16">
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>
-                        <a class="menu__link menu__link--transition menu__link--contact" href="tel:+48111111111">+48
-                            111 111
+                        <a class="menu__link menu__link--transition menu__link--contact" href="tel:+48111111111">+48 111
+                            111
                             111</a>
                     </li>
                 </ul>
+
             </div>
         </div>
+
+        <!-- MOBILE MENU -->
+        <div class="mobile d-none">
+
+            <button class="mobile__btn" type="button">
+                <svg width="40" height="40">
+                    <use href="./images/icons.svg#icon-close_mobile"></use>
+                </svg>
+            </button>
+            <ul class="mobile__menu">
+                <li class="mobile__space">
+                    <a class="mobile__link" href="./index.html">Agencja</a>
+                </li>
+                <li class="mobile__space">
+                    <a class="mobile__link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a class="mobile__link" href="#">Kontakt</a>
+                </li>
+            </ul>
+            <ul class="contacts">
+                <li class="contacts__margin">
+                    <a class="contacts__tel" href="tel:+48111111111">+48 111
+                        111
+                        111</a>
+                </li>
+                <li>
+                    <a class="contacts__mail" href="mailto:info@example.com">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="links">
+                <li>
+                    <a class="links__social links__social--none" href="#">Instagram</a>
+                </li>
+                <li>
+                    <a class="links__social" href="#">Twitter</a>
+                </li>
+                <li>
+                    <a class="links__social" href="#">Facebook</a>
+                </li>
+                <li>
+                    <a class="links__social" href="#">LinkedIn</a>
+                </li>
+            </ul>
+
+        </div>
+        <!-- MOBILE MENU THE END -->
     </header>
     <main>
         <div class="container">
             <ul class="buttons">
-                <li><button class="portfolio portfolio--space" type="button">Wszystkie</button></li>
-                <li><button class="portfolio portfolio--space" type="button">Strony</button></li>
-                <li><button class="portfolio portfolio--space" type="button">Aplikacje</button></li>
-                <li><button class="portfolio portfolio--space" type="button">Dizajn</button></li>
+                <li><button class="portfolio" type="button">Wszystkie</button></li>
+                <li><button class="portfolio" type="button">Strony</button></li>
+                <li><button class="portfolio" type="button">Aplikacje</button></li>
+                <li><button class="portfolio" type="button">Dizajn</button></li>
                 <li><button class="portfolio" type="button">Marketing</button></li>
             </ul>
             <ul class="cards">
@@ -269,6 +321,7 @@
             </ul>
         </div>
     </main>
+
     <footer class="footer">
         <div class="container wrap">
             <div>
@@ -315,7 +368,7 @@
                     </li>
                 </ul>
             </div>
-            <form>
+            <form class="forme">
                 <div class="newsletter">
                     <label class="newsletter__label" for="newsletter">zapisz się do newslettera</label>
                     <input class="newsletter__input" type="email" name="email" id="newsletter" placeholder="E-mail">
@@ -329,6 +382,9 @@
             </form>
         </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
+
 </body>
 
 </html>
