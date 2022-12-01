@@ -9,6 +9,11 @@
 	letter-spacing: 0.03em;
 	margin-inline: auto;
 	margin-bottom: 20px;
+
+	@media screen and (min-width: 1200px) {
+		justify-content: flex-start;
+		margin-inline: 0;
+	}
 }
 // .media-header {
 // 	color: var(--main-white);

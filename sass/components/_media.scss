@@ -2,6 +2,10 @@
 	display: flex;
 	list-style: none;
 	margin-bottom: 60px;
+
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 0;
+	}
 }
 
 .media__ellipse {

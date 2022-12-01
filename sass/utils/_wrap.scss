@@ -13,7 +13,10 @@
 }
 @media screen and (min-width: 1200px) {
 	.wrap {
-		flex-wrap: nowrap;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
 	}
 }
 
