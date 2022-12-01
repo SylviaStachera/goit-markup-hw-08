@@ -463,6 +463,7 @@ body {
 
 .mobile {
   position: fixed;
+  z-index: 2;
   top: 0;
   width: 100%;
   height: 100%;
@@ -1353,10 +1354,16 @@ body {
 
 .cards {
   display: flex;
+  flex-direction: column;
   list-style: none;
   flex-wrap: wrap;
   gap: 30px;
   padding-bottom: 94px;
+}
+@media screen and (min-width: 768px) {
+  .cards {
+    flex-direction: row;
+  }
 }
 
 .project {
@@ -1372,7 +1379,17 @@ body {
   transform: translateY(0);
 }
 .project--width {
-  max-width: 370px;
+  max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .project--width {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project--width {
+    max-width: 370px;
+  }
 }
 
 .overlay {
