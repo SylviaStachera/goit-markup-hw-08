@@ -29,6 +29,9 @@
 		height: 4px;
 		width: 110%;
 		border-radius: 2px;
+		@media screen and (min-width: 1200px) {
+			bottom: -30px;
+		}
 	}
 }
 
