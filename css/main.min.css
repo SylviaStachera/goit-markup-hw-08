@@ -658,7 +658,7 @@ body {
 }
 
 .big-header, .big-header--display {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: bold;
   font-size: 28px;
   line-height: 1.1667;
@@ -667,6 +667,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .big-header, .big-header--display {
+    margin-bottom: 50px;
     font-size: 36px;
   }
 }
