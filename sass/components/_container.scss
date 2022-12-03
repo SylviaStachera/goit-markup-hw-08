@@ -20,6 +20,19 @@
 		max-width: 1200px;
 	}
 }
+
+.container--padding {
+	padding: 0;
+}
+.container--portfolio {
+	@media screen and (min-width: 768px) {
+		padding: 0;
+	}
+	@media screen and (min-width: 1200px) {
+		padding: 0 15px;
+	}
+}
+
 // .container {
 // 	margin: 0 auto;
 // 	max-width: 1200px;

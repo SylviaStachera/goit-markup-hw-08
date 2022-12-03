@@ -286,6 +286,21 @@ body {
     max-width: 1200px;
   }
 }
+.container--padding {
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .container--portfolio {
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container--portfolio {
+    padding: 0 15px;
+  }
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -893,7 +908,6 @@ body {
   gap: 30px;
   justify-content: center;
   list-style: none;
-  padding: 0;
 }
 @media screen and (min-width: 1200px) {
   .clients {
