@@ -333,7 +333,7 @@ body {
   cursor: pointer;
   fill: var(--active-color);
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .burger {
     display: none;
   }
@@ -390,7 +390,7 @@ body {
   list-style: none;
   align-items: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .menu {
     display: none;
   }
@@ -451,7 +451,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .menu--flex {
     display: none;
   }
