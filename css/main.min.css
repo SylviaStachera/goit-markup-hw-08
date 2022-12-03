@@ -478,7 +478,12 @@ body {
 }
 
 .menu__link--space {
-  margin-right: 50px;
+  margin-right: 0;
+}
+@media screen and (min-width: 1200px) {
+  .menu__link--space {
+    margin-right: 50px;
+  }
 }
 
 .mobile {
