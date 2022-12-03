@@ -297,6 +297,11 @@ body {
   align-items: center;
   background-color: var(--main-white);
 }
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+  .nav {
+    max-width: 100%;
+  }
+}
 
 .navigation {
   display: flex;
