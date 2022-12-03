@@ -290,14 +290,9 @@ body {
   padding: 0;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .container--portfolio {
     padding: 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container--portfolio {
-    padding: 0 15px;
   }
 }
 
@@ -1418,6 +1413,7 @@ body {
   transform: translateY(0);
 }
 .project--width {
+  margin: 0;
   max-width: 450px;
 }
 @media screen and (min-width: 768px) {

@@ -25,11 +25,8 @@
 	padding: 0;
 }
 .container--portfolio {
-	@media screen and (min-width: 768px) {
+	@media screen and (max-width: 768px) {
 		padding: 0;
-	}
-	@media screen and (min-width: 1200px) {
-		padding: 0 15px;
 	}
 }
 
